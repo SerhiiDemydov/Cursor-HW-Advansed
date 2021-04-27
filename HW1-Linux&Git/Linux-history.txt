@@ -1,0 +1,52 @@
+    2  mkdir linux_lecture
+    3  touch notes.txt
+    4  ll
+    5  cp notes.txt linux_lecture/
+    6  ll
+    7  la
+    8  mv notes.txt new_notes.txt
+    9  la
+   10  rm linux_lecture/notes.txt new_notes.txt 
+   11  la
+   12  cd linux_lecture/
+   13  touch homework.sh
+   14  ll
+   15  touch -mat 202001011615 homework.sh 
+   16  ll
+   17  ll-
+   18  llc
+   19  stat homework.sh 
+   20  touch hw.sh hw1.sh hw2.sh hw1.txt 
+   21  ll
+   22  ll | grep *.txt
+   23  cd ..
+   24  mkdir lecture_new
+   25  cp linux_lecture/*.txt lecture_new/
+   26  cd lecture_new/
+   27  ll
+   28  cd..
+   29  cd ..
+   30  cd linux_lecture/
+   31  echo 'linux_lecture' > homework.sh 
+   32  cat homework.sh 
+   33  ll
+   34  chmod 266 homework.sh 
+   35  ll
+   36  cat homework.sh 
+   37  chmod 700 homework.sh 
+   38  ll
+   39  ./homework.sh 
+   40  subl homework.sh 
+   41  head homework.sh 
+   42  head homework.sh 5
+   43  head --help 
+   44  head -n4 homework.sh 
+   45  tail --help
+   46  tail -n6 homework.sh 
+   47  head -n7 homework.sh 
+   48  touch notes.sh && echo 'ls' > notes.sh
+   49  ./notes.sh
+   50  sudo notes.sh
+   51  chmod 766 notes.sh 
+   52  ./notes.sh
+

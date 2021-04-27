@@ -1,0 +1,203 @@
+serhii@serhii-VirtualBox:~$ history -c
+serhii@serhii-VirtualBox:~$ mkdir cursor_git
+serhii@serhii-VirtualBox:~$ cd cursor_git/
+serhii@serhii-VirtualBox:~/cursor_git$ touch first.py
+serhii@serhii-VirtualBox:~/cursor_git$ git status
+fatal: not a git repository (or any of the parent directories): .git
+serhii@serhii-VirtualBox:~/cursor_git$ git status
+fatal: not a git repository (or any of the parent directories): .git
+serhii@serhii-VirtualBox:~/cursor_git$ cd ..
+serhii@serhii-VirtualBox:~$ git remote add origin git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+fatal: not a git repository (or any of the parent directories): .git
+serhii@serhii-VirtualBox:~$ cd cursor_git/
+serhii@serhii-VirtualBox:~/cursor_git$ git remote set-url git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+fatal: not a git repository (or any of the parent directories): .git
+serhii@serhii-VirtualBox:~/cursor_git$ cd ..
+serhii@serhii-VirtualBox:~$ git remote add origin git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+fatal: not a git repository (or any of the parent directories): .git
+serhii@serhii-VirtualBox:~$ cd cursor_git/
+serhii@serhii-VirtualBox:~/cursor_git$ git init
+Initialized empty Git repository in /home/serhii/cursor_git/.git/
+serhii@serhii-VirtualBox:~/cursor_git$ git remote add origin git@github.com:SerhiiDemydov/cursor_git_advansed.git
+serhii@serhii-VirtualBox:~/cursor_git$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'git@github.com:SerhiiDemydov/cursor_git_advansed.git'
+serhii@serhii-VirtualBox:~/cursor_git$ ll
+total 12
+drwxrwxr-x  3 serhii serhii 4096 апр 27 20:46 ./
+drwxr-xr-x 25 serhii serhii 4096 апр 27 20:24 ../
+-rw-rw-r--  1 serhii serhii    0 апр 27 20:25 first.py
+drwxrwxr-x  7 serhii serhii 4096 апр 27 20:48 .git/
+serhii@serhii-VirtualBox:~/cursor_git$ git add first.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'adding first.py'
+[master (root-commit) c3b451b] adding first.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.py
+serhii@serhii-VirtualBox:~/cursor_git$ git log
+commit c3b451b8524d7e96f2c8d5f0e40c64a3beffae6b (HEAD -> master)
+Author: Serhii Demydov <serjdemidov95@gmail.com>
+Date:   Tue Apr 27 20:49:40 2021 +0300
+
+    adding first.py
+serhii@serhii-VirtualBox:~/cursor_git$ touch second.py
+serhii@serhii-VirtualBox:~/cursor_git$ git add second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'adding second.py'
+[master 8cb8abc] adding second.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.py
+serhii@serhii-VirtualBox:~/cursor_git$ rm first.py 
+serhii@serhii-VirtualBox:~/cursor_git$ ll
+total 12
+drwxrwxr-x  3 serhii serhii 4096 апр 27 20:51 ./
+drwxr-xr-x 25 serhii serhii 4096 апр 27 20:24 ../
+drwxrwxr-x  8 serhii serhii 4096 апр 27 20:50 .git/
+-rw-rw-r--  1 serhii serhii    0 апр 27 20:50 second.py
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'removing first.py'
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    first.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+serhii@serhii-VirtualBox:~/cursor_git$ git add first.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'removing first.py'
+[master db637d0] removing first.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.py
+serhii@serhii-VirtualBox:~/cursor_git$ git log
+commit db637d09688dbfee1747db8487469d60f9f5a652 (HEAD -> master)
+Author: Serhii Demydov <serjdemidov95@gmail.com>
+Date:   Tue Apr 27 20:51:50 2021 +0300
+
+    removing first.py
+
+commit 8cb8abc89890ee75858e65f94aedd467bcf5c13e
+Author: Serhii Demydov <serjdemidov95@gmail.com>
+Date:   Tue Apr 27 20:50:37 2021 +0300
+
+    adding second.py
+
+commit c3b451b8524d7e96f2c8d5f0e40c64a3beffae6b
+Author: Serhii Demydov <serjdemidov95@gmail.com>
+Date:   Tue Apr 27 20:49:40 2021 +0300
+
+    adding first.py
+serhii@serhii-VirtualBox:~/cursor_git$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+serhii@serhii-VirtualBox:~/cursor_git$ git push --set-upstream origin 
+HEAD     master   
+serhii@serhii-VirtualBox:~/cursor_git$ git push --set-upstream origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 3 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 660 bytes | 660.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To github.com:SerhiiDemydov/cursor_git_advansed.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+serhii@serhii-VirtualBox:~/cursor_git$ git branch first
+serhii@serhii-VirtualBox:~/cursor_git$ git branch second
+serhii@serhii-VirtualBox:~/cursor_git$ git branch 
+  first
+* master
+  second
+serhii@serhii-VirtualBox:~/cursor_git$ git checkout second 
+Switched to branch 'second'
+serhii@serhii-VirtualBox:~/cursor_git$ echo 'print("Hello")' > second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git stash 
+Saved working directory and index state WIP on second: db637d0 removing first.py
+serhii@serhii-VirtualBox:~/cursor_git$ git checkout first 
+Switched to branch 'first'
+serhii@serhii-VirtualBox:~/cursor_git$ git checkout second 
+Switched to branch 'second'
+serhii@serhii-VirtualBox:~/cursor_git$ git stash pop
+On branch second
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   second.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (6c73bfb1cd3769fdf6629f6d9227a7da9f3c369b)
+serhii@serhii-VirtualBox:~/cursor_git$ git add 
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+serhii@serhii-VirtualBox:~/cursor_git$ git add second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'Changing second.py'
+[second b8a5612] Changing second.py
+ 1 file changed, 1 insertion(+)
+serhii@serhii-VirtualBox:~/cursor_git$ git push 
+fatal: The current branch second has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin second
+
+serhii@serhii-VirtualBox:~/cursor_git$ git push --set-upstream origin second 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'second' on GitHub by visiting:
+remote:      https://github.com/SerhiiDemydov/cursor_git_advansed/pull/new/second
+remote: 
+To github.com:SerhiiDemydov/cursor_git_advansed.git
+ * [new branch]      second -> second
+Branch 'second' set up to track remote branch 'second' from 'origin'.
+serhii@serhii-VirtualBox:~/cursor_git$ git checkout first 
+Switched to branch 'first'
+serhii@serhii-VirtualBox:~/cursor_git$ echo 'print("Cursor")' > second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git add second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'Changing second.py'
+[first eabd903] Changing second.py
+ 1 file changed, 1 insertion(+)
+serhii@serhii-VirtualBox:~/cursor_git$ git push --set-upstream origin first 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'first' on GitHub by visiting:
+remote:      https://github.com/SerhiiDemydov/cursor_git_advansed/pull/new/first
+remote: 
+To github.com:SerhiiDemydov/cursor_git_advansed.git
+ * [new branch]      first -> first
+Branch 'first' set up to track remote branch 'first' from 'origin'.
+serhii@serhii-VirtualBox:~/cursor_git$ git che
+checkout      cherry        cherry-pick   
+serhii@serhii-VirtualBox:~/cursor_git$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+serhii@serhii-VirtualBox:~/cursor_git$ git merge second 
+Updating db637d0..b8a5612
+Fast-forward
+ second.py | 1 +
+ 1 file changed, 1 insertion(+)
+serhii@serhii-VirtualBox:~/cursor_git$ git merge first 
+Auto-merging second.py
+CONFLICT (content): Merge conflict in second.py
+Automatic merge failed; fix conflicts and then commit the result.
+serhii@serhii-VirtualBox:~/cursor_git$ subl second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ cat second.py 
+
+print("Hello")
+
+print("Cursor")
+
+serhii@serhii-VirtualBox:~/cursor_git$ git add second.py 
+serhii@serhii-VirtualBox:~/cursor_git$ git commit -m 'Merging files from first and second branch'
+[master 1c840bc] Merging files from first and second branch
+serhii@serhii-VirtualBox:~/cursor_git$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:SerhiiDemydov/cursor_git_advansed.git
+   db637d0..1c840bc  master -> master
+

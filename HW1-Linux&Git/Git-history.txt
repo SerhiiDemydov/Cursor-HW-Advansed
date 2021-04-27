@@ -1,0 +1,58 @@
+    1  mkdir cursor_git
+    2  cd cursor_git/
+    3  touch first.py
+    4  git status
+    5  cd ..
+    6  git remote add origin git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+    7  cd cursor_git/
+    8  git remote set-url git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+    9  cd ..
+   10  git remote add origin git@github.com:SerhiiDemydov/Cursor-HW-Advansed.git
+   11  cd cursor_git/
+   12  git init
+   13  git remote add origin git@github.com:SerhiiDemydov/cursor_git_advansed.git
+   14  git push -u origin main
+   15  ll
+   16  git add first.py 
+   17  git commit -m 'adding first.py'
+   18  git log
+   19  touch second.py
+   20  git add second.py 
+   21  git commit -m 'adding second.py'
+   22  rm first.py 
+   23  ll
+   24  git commit -m 'removing first.py'
+   25  git add first.py 
+   26  git commit -m 'removing first.py'
+   27  git log
+   28  git push
+   29  git push --set-upstream origin master
+   30  git branch first
+   31  git branch second
+   32  git branch 
+   33  git checkout second 
+   34  echo 'print("Hello")' > second.py 
+   35  git stash 
+   36  git checkout first 
+   37  git checkout second 
+   38  git stash pop
+   39  git add 
+   40  git add second.py 
+   41  git commit -m 'Changing second.py'
+   42  git push 
+   43  git push --set-upstream origin second 
+   44  git checkout first 
+   45  echo 'print("Cursor")' > second.py 
+   46  git add second.py 
+   47  git commit -m 'Changing second.py'
+   48  git push --set-upstream origin first 
+   49  git checkout master 
+   50  git merge second 
+   51  git merge first 
+   52  subl second.py 
+   53  cat second.py 
+   54  git add second.py 
+   55  git commit -m 'Merging files from first and second branch'
+   56  git push
+   57  history 
+

@@ -1,0 +1,320 @@
+serhii@serhii-VirtualBox:~$ mkdir linux_lecture
+serhii@serhii-VirtualBox:~$ touch notes.txt
+serhii@serhii-VirtualBox:~$ ll
+total 116
+drwxr-xr-x 22 serhii serhii 4096 апр 27 19:39 ./
+drwxr-xr-x  3 root   root   4096 фев 16 17:31 ../
+-rw-------  1 serhii serhii 6393 апр 14 19:50 .bash_history
+-rw-r--r--  1 serhii serhii  220 фев 16 17:31 .bash_logout
+-rw-r--r--  1 serhii serhii 3771 фев 16 17:31 .bashrc
+drwx------ 19 serhii serhii 4096 фев 24 18:28 .cache/
+drwxr-xr-x 20 serhii serhii 4096 мар 11 19:44 .config/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Desktop/
+drwxr-xr-x  3 serhii serhii 4096 фев 17 18:44 Documents/
+drwxr-xr-x  3 serhii serhii 4096 мар 31 19:42 Downloads/
+-rw-rw-r--  1 serhii serhii   63 фев 19 19:18 .gitconfig
+drwx------  3 serhii serhii 4096 фев 19 17:10 .gnupg/
+drwxrwxr-x  4 serhii serhii 4096 фев 16 21:00 .java/
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:39 linux_lecture/
+drwxr-xr-x  5 serhii serhii 4096 апр  4 13:11 .local/
+drwx------  5 serhii serhii 4096 фев 16 20:47 .mozilla/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Music/
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:39 notes.txt
+-rw-r--r--  1 serhii serhii  357 фев 16 19:30 .pam_environment
+drwxr-xr-x  2 serhii serhii 4096 фев 20 13:55 Pictures/
+drwx------  3 serhii serhii 4096 фев 17 19:47 .pki/
+-rw-r--r--  1 serhii serhii  807 фев 16 17:31 .profile
+drwxrwxr-x  5 serhii serhii 4096 фев 24 20:49 Projects/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Public/
+drwxrwxr-x  3 serhii serhii 4096 фев 24 18:05 PycharmProjects/
+drwxr-xr-x  5 serhii serhii 4096 фев 17 19:42 snap/
+drwx------  2 serhii serhii 4096 фев 19 19:49 .ssh/
+-rw-r--r--  1 serhii serhii    0 фев 16 19:51 .sudo_as_admin_successful
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Templates/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Videos/
+serhii@serhii-VirtualBox:~$ cp notes.txt linux_lecture/
+serhii@serhii-VirtualBox:~$ ll
+total 116
+drwxr-xr-x 22 serhii serhii 4096 апр 27 19:39 ./
+drwxr-xr-x  3 root   root   4096 фев 16 17:31 ../
+-rw-------  1 serhii serhii 6393 апр 14 19:50 .bash_history
+-rw-r--r--  1 serhii serhii  220 фев 16 17:31 .bash_logout
+-rw-r--r--  1 serhii serhii 3771 фев 16 17:31 .bashrc
+drwx------ 19 serhii serhii 4096 фев 24 18:28 .cache/
+drwxr-xr-x 20 serhii serhii 4096 мар 11 19:44 .config/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Desktop/
+drwxr-xr-x  3 serhii serhii 4096 фев 17 18:44 Documents/
+drwxr-xr-x  3 serhii serhii 4096 мар 31 19:42 Downloads/
+-rw-rw-r--  1 serhii serhii   63 фев 19 19:18 .gitconfig
+drwx------  3 serhii serhii 4096 фев 19 17:10 .gnupg/
+drwxrwxr-x  4 serhii serhii 4096 фев 16 21:00 .java/
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:40 linux_lecture/
+drwxr-xr-x  5 serhii serhii 4096 апр  4 13:11 .local/
+drwx------  5 serhii serhii 4096 фев 16 20:47 .mozilla/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Music/
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:39 notes.txt
+-rw-r--r--  1 serhii serhii  357 фев 16 19:30 .pam_environment
+drwxr-xr-x  2 serhii serhii 4096 фев 20 13:55 Pictures/
+drwx------  3 serhii serhii 4096 фев 17 19:47 .pki/
+-rw-r--r--  1 serhii serhii  807 фев 16 17:31 .profile
+drwxrwxr-x  5 serhii serhii 4096 фев 24 20:49 Projects/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Public/
+drwxrwxr-x  3 serhii serhii 4096 фев 24 18:05 PycharmProjects/
+drwxr-xr-x  5 serhii serhii 4096 фев 17 19:42 snap/
+drwx------  2 serhii serhii 4096 фев 19 19:49 .ssh/
+-rw-r--r--  1 serhii serhii    0 фев 16 19:51 .sudo_as_admin_successful
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Templates/
+drwxr-xr-x  2 serhii serhii 4096 фев 16 19:31 Videos/
+serhii@serhii-VirtualBox:~$ la
+.bash_history  Downloads      Music             Public
+.bash_logout   .gitconfig     notes.txt         PycharmProjects
+.bashrc        .gnupg         .pam_environment  snap
+.cache         .java          Pictures          .ssh
+.config        linux_lecture  .pki              .sudo_as_admin_successful
+Desktop        .local         .profile          Templates
+Documents      .mozilla       Projects          Videos
+serhii@serhii-VirtualBox:~$ mv notes.txt new_notes.txt
+serhii@serhii-VirtualBox:~$ la
+.bash_history  Downloads      Music             Public
+.bash_logout   .gitconfig     new_notes.txt     PycharmProjects
+.bashrc        .gnupg         .pam_environment  snap
+.cache         .java          Pictures          .ssh
+.config        linux_lecture  .pki              .sudo_as_admin_successful
+Desktop        .local         .profile          Templates
+Documents      .mozilla       Projects          Videos
+serhii@serhii-VirtualBox:~$ rm linux_lecture/notes.txt new_notes.txt 
+serhii@serhii-VirtualBox:~$ la
+.bash_history  Downloads      Music             PycharmProjects
+.bash_logout   .gitconfig     .pam_environment  snap
+.bashrc        .gnupg         Pictures          .ssh
+.cache         .java          .pki              .sudo_as_admin_successful
+.config        linux_lecture  .profile          Templates
+Desktop        .local         Projects          Videos
+Documents      .mozilla       Public
+serhii@serhii-VirtualBox:~$ cd linux_lecture/
+serhii@serhii-VirtualBox:~/linux_lecture$ touch homework.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 8
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:43 ./
+drwxr-xr-x 22 serhii serhii 4096 апр 27 19:42 ../
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:43 homework.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ touch -mat 202001011615 homework.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 8
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:43 ./
+drwxr-xr-x 22 serhii serhii 4096 апр 27 19:42 ../
+-rw-rw-r--  1 serhii serhii    0 янв  1  2020 homework.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ ll-
+
+Command 'll-' not found, did you mean:
+
+  command 'llc' from deb llvm (1:10.0-50~exp1)
+  command 'lld' from deb lld (1:10.0-50~exp1)
+  command 'lli' from deb llvm-runtime (1:10.0-50~exp1)
+  command 'llt' from deb storebackup (3.2.1-1+deb8u1build0.20.04.1)
+
+Try: sudo apt install <deb name>
+
+serhii@serhii-VirtualBox:~/linux_lecture$ llc
+
+Command 'llc' not found, but can be installed with:
+
+sudo apt install llvm
+
+serhii@serhii-VirtualBox:~/linux_lecture$ stat homework.sh 
+  File: homework.sh
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 805h/2053d	Inode: 537938      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/  serhii)   Gid: ( 1000/  serhii)
+Access: 2020-01-01 16:15:00.000000000 +0200
+Modify: 2020-01-01 16:15:00.000000000 +0200
+Change: 2021-04-27 19:47:15.746157545 +0300
+ Birth: -
+serhii@serhii-VirtualBox:~/linux_lecture$ touch hw.sh hw1.sh hw2.sh hw1.txt 
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 8
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:49 ./
+drwxr-xr-x 22 serhii serhii 4096 апр 27 19:42 ../
+-rw-rw-r--  1 serhii serhii    0 янв  1  2020 homework.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.txt
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw2.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ ll | grep *.txt
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.txt
+serhii@serhii-VirtualBox:~/linux_lecture$ cd ..
+serhii@serhii-VirtualBox:~$ mkdir lecture_new
+serhii@serhii-VirtualBox:~$ cp linux_lecture/*.txt lecture_new/
+serhii@serhii-VirtualBox:~$ cd lecture_new/
+serhii@serhii-VirtualBox:~/lecture_new$ ll
+total 8
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:51 ./
+drwxr-xr-x 23 serhii serhii 4096 апр 27 19:51 ../
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:51 hw1.txt
+serhii@serhii-VirtualBox:~/lecture_new$ cd..
+cd..: command not found
+serhii@serhii-VirtualBox:~/lecture_new$ cd ..
+serhii@serhii-VirtualBox:~$ cd linux_lecture/
+serhii@serhii-VirtualBox:~/linux_lecture$ echo 'linux_lecture' > homework.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ cat homework.sh 
+linux_lecture
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 12
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:49 ./
+drwxr-xr-x 23 serhii serhii 4096 апр 27 19:51 ../
+-rw-rw-r--  1 serhii serhii   14 апр 27 19:54 homework.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.txt
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw2.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ chmod 266 homework.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 12
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:49 ./
+drwxr-xr-x 23 serhii serhii 4096 апр 27 19:51 ../
+--w-rw-rw-  1 serhii serhii   14 апр 27 19:54 homework.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.txt
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw2.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ cat homework.sh 
+cat: homework.sh: Permission denied
+serhii@serhii-VirtualBox:~/linux_lecture$ chmod 700 homework.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ ll
+total 12
+drwxrwxr-x  2 serhii serhii 4096 апр 27 19:49 ./
+drwxr-xr-x 23 serhii serhii 4096 апр 27 19:51 ../
+-rwx------  1 serhii serhii   14 апр 27 19:54 homework.sh*
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw1.txt
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw2.sh
+-rw-rw-r--  1 serhii serhii    0 апр 27 19:49 hw.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ ./homework.sh 
+./homework.sh: line 1: linux_lecture: command not found
+serhii@serhii-VirtualBox:~/linux_lecture$ subl homework.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ head homework.sh 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10serhii@serhii-VirtualBox:~/linux_lecture$ head homework.sh 5
+==> homework.sh <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10head: cannot open '5' for reading: No such file or directory
+serhii@serhii-VirtualBox:~/linux_lecture$ head --help 
+Usage: head [OPTION]... [FILE]...
+Print the first 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[-]NUM       print the first NUM bytes of each file;
+                             with the leading '-', print all but the last
+                             NUM bytes of each file
+  -n, --lines=[-]NUM       print the first NUM lines instead of the first 10;
+                             with the leading '-', print all but the last
+                             NUM lines of each file
+  -q, --quiet, --silent    never print headers giving file names
+  -v, --verbose            always print headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/head>
+or available locally via: info '(coreutils) head invocation'
+serhii@serhii-VirtualBox:~/linux_lecture$ head -n4 homework.sh 
+1
+2
+3
+4
+serhii@serhii-VirtualBox:~/linux_lecture$ tail --help
+Usage: tail [OPTION]... [FILE]...
+Print the last 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+
+With --follow (-f), tail defaults to following the file descriptor, which
+means that even if a tail'ed file is renamed, tail will continue to track
+its end.  This default behavior is not desirable when you really want to
+track the actual name of the file, not the file descriptor (e.g., log
+rotation).  Use --follow=name in that case.  That causes tail to track the
+named file in a way that accommodates renaming, removal and creation.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'
+serhii@serhii-VirtualBox:~/linux_lecture$ tail -n6 homework.sh 
+5
+6
+7
+8
+9
+10serhii@serhii-VirtualBox:~/linux_lecture$ head -n7 homework.sh 
+1
+2
+3
+4
+5
+6
+7
+serhii@serhii-VirtualBox:~/linux_lecture$ touch notes.sh && echo 'ls' > notes.sh
+serhii@serhii-VirtualBox:~/linux_lecture$ ./notes.sh
+bash: ./notes.sh: Permission denied
+serhii@serhii-VirtualBox:~/linux_lecture$ sudo notes.sh
+[sudo] password for serhii: 
+sudo: notes.sh: command not found
+serhii@serhii-VirtualBox:~/linux_lecture$ chmod 766 notes.sh 
+serhii@serhii-VirtualBox:~/linux_lecture$ ./notes.sh
+homework.sh  hw1.sh  hw1.txt  hw2.sh  hw.sh  notes.sh
+
