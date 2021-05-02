@@ -56,10 +56,10 @@ bird.eat()
 snake.sleep()
 
 print(f'Object fish is an instance of the Animals class: {isinstance(fish, Animal)}')
-print(f'Object bird is an instance of the Animals class: {isinstance(fish, Animal)}')
-print(f'Object snake is an instance of the Animals class: {isinstance(fish, Animal)}')
-print(f'Object frog is an instance of the Animals class: {isinstance(fish, Animal)}')
-print(f'Object horse is an instance of the Animals class: {isinstance(fish, Animal)}')
+print(f'Object bird is an instance of the Animals class: {isinstance(bird, Animal)}')
+print(f'Object snake is an instance of the Animals class: {isinstance(snake, Animal)}')
+print(f'Object frog is an instance of the Animals class: {isinstance(frog, Animal)}')
+print(f'Object horse is an instance of the Animals class: {isinstance(horse, Animal)}')
 
 """
 1.a.Create a new class Human and use multiple inheritance to create Centaur class,
