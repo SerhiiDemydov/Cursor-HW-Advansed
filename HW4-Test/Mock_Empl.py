@@ -13,7 +13,7 @@ class mockResponseTrue:
         pass
 
 class mockResponseFalse:
-    status_code = 200
+    status_code = 404
     elapsed = 100
     text = "response.ok = False"
     ok = False
