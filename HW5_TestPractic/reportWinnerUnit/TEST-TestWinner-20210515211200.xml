@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<testsuite name="TestWinner-20210515211200" tests="5" time="0.006" failures="0" errors="0">
+	<testcase classname="TestWinner" name="test_winne_not_won" time="0.002"/>
+	<testcase classname="TestWinner" name="test_winner_colum" time="0.002"/>
+	<testcase classname="TestWinner" name="test_winner_diagonal1" time="0.001"/>
+	<testcase classname="TestWinner" name="test_winner_diagonal2" time="0.000"/>
+	<testcase classname="TestWinner" name="test_winner_row" time="0.001"/>
+	<system-out><![CDATA[
+test_winne_not_won - 1
+| X | O | X |
+|   |   |   |
+| X |   |   |
+
+test_winne_not_won - 2
+|   |   | X |
+| O | X |   |
+|   |   |   |
+
+test_winne_not_won - 3
+|   |   | O |
+|   | X |   |
+|   |   |   |
+
+test_winner_colum - 1
+| X |   |   |
+| X |   |   |
+| X |   |   |
+
+test_winner_colum - 2
+|   | X |   |
+|   | X |   |
+|   | X |   |
+
+test_winner_colum - 3
+|   |   | X |
+|   |   | X |
+|   |   | X |
+
+test_winner_diagonal1
+| X |   |   |
+|   | X |   |
+|   |   | X |
+
+test_winner_diagonal2
+|   |   | X |
+|   | X |   |
+| X |   |   |
+
+test_winner_row - 1
+| X | X | X |
+|   |   |   |
+|   |   |   |
+
+test_winner_row - 2
+|   |   |   |
+| X | X | X |
+|   |   |   |
+
+test_winner_row - 2
+|   |   |   |
+|   |   |   |
+| X | X | X |
+]]></system-out>
+	<system-err><![CDATA[]]></system-err>
+</testsuite>
